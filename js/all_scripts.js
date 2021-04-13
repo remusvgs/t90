@@ -23091,63 +23091,98 @@ function generateTable(user_carb, user_prot, user_fat, goal) {
 	var table = document.getElementsByClassName("table")[0];
 	var rows = table.rows;
 
-	//set protein row
-	rows[2].cells[1].innerText = user_prot + 'g';
-	rows[2].cells[2].innerText = user_prot + 'g';
-	rows[2].cells[3].innerText = user_prot + 'g';
-	rows[2].cells[4].innerText = user_prot + 'g';
-	rows[2].cells[5].innerText = user_prot + 'g';
-	rows[2].cells[6].innerText = user_prot + 'g';
-	rows[2].cells[7].innerText = user_prot + 'g';
+	//set protein rows: meal 1 and 2
+	rows[5].cells[1].innerText = Math.round(user_prot/2) + 'g';
+	rows[5].cells[2].innerText = Math.round(user_prot/2) + 'g';
+	rows[5].cells[3].innerText = Math.round(user_prot/2) + 'g';
+	rows[5].cells[4].innerText = Math.round(user_prot/2) + 'g';
+	rows[5].cells[5].innerText = Math.round(user_prot/2) + 'g';
+	rows[5].cells[6].innerText = Math.round(user_prot/2) + 'g';
+	rows[5].cells[7].innerText = Math.round(user_prot/2) + 'g';
+	rows[6].cells[1].innerText = Math.round(user_prot/2) + 'g';
+	rows[6].cells[2].innerText = Math.round(user_prot/2) + 'g';
+	rows[6].cells[3].innerText = Math.round(user_prot/2) + 'g';
+	rows[6].cells[4].innerText = Math.round(user_prot/2) + 'g';
+	rows[6].cells[5].innerText = Math.round(user_prot/2) + 'g';
+	rows[6].cells[6].innerText = Math.round(user_prot/2) + 'g';
+	rows[6].cells[7].innerText = Math.round(user_prot/2) + 'g';
 
 	if (goal == -500) { //goals 1&5
 		//set regular days
-		rows[1].cells[3].innerText = user_carb + 'g';
-		rows[1].cells[4].innerText = user_carb + 'g';
-		rows[1].cells[6].innerText = user_carb + 'g';
-		rows[1].cells[7].innerText = user_carb + 'g';
+		rows[2].cells[3].innerText = Math.round(user_carb/2) + 'g';
+		rows[2].cells[4].innerText = Math.round(user_carb/2) + 'g';
+		rows[2].cells[6].innerText = Math.round(user_carb/2) + 'g';
+		rows[2].cells[7].innerText = Math.round(user_carb/2) + 'g';
+		rows[3].cells[3].innerText = Math.round(user_carb/2) + 'g';
+		rows[3].cells[4].innerText = Math.round(user_carb/2) + 'g';
+		rows[3].cells[6].innerText = Math.round(user_carb/2) + 'g';
+		rows[3].cells[7].innerText = Math.round(user_carb/2) + 'g';
 
-		rows[3].cells[3].innerText = user_fat + 'g';
-		rows[3].cells[4].innerText = user_fat + 'g';
-		rows[3].cells[6].innerText = user_fat + 'g';
-		rows[3].cells[7].innerText = user_fat + 'g';
+		rows[8].cells[3].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[4].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[6].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[7].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[3].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[4].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[6].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[7].innerText = Math.round(user_fat/2) + 'g';
 
 		//set zero carb days
-		rows[1].cells[1].innerText = 0 + 'g';
-		rows[1].cells[2].innerText = 0 + 'g';
-		rows[1].cells[5].innerText = 0 + 'g';
+		rows[2].cells[1].innerText = 0 + 'g';
+		rows[2].cells[2].innerText = 0 + 'g';
+		rows[2].cells[5].innerText = 0 + 'g';
+		rows[3].cells[1].innerText = 0 + 'g';
+		rows[3].cells[2].innerText = 0 + 'g';
+		rows[3].cells[5].innerText = 0 + 'g';
 
 		//calculate new fat amount
 		user_fat = Math.round(user_fat + (user_carb * 4)/9);
 
-		rows[3].cells[1].innerText = user_fat + 'g';
-		rows[3].cells[2].innerText = user_fat + 'g';
-		rows[3].cells[5].innerText = user_fat + 'g';
+		rows[8].cells[1].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[2].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[5].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[1].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[2].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[5].innerText = Math.round(user_fat/2) + 'g';
 	}
 
 	if (goal == -750) { //goal 2
 		//set regular days
-		rows[1].cells[4].innerText = user_carb + 'g';
-		rows[1].cells[6].innerText = user_carb + 'g';
-		rows[1].cells[7].innerText = user_carb + 'g';
+		rows[2].cells[4].innerText = Math.round(user_carb/2) + 'g';
+		rows[2].cells[6].innerText = Math.round(user_carb/2) + 'g';
+		rows[2].cells[7].innerText = Math.round(user_carb/2) + 'g';
+		rows[3].cells[4].innerText = Math.round(user_carb/2) + 'g';
+		rows[3].cells[6].innerText = Math.round(user_carb/2) + 'g';
+		rows[3].cells[7].innerText = Math.round(user_carb/2) + 'g';
 
-		rows[3].cells[4].innerText = user_fat + 'g';
-		rows[3].cells[6].innerText = user_fat + 'g';
-		rows[3].cells[7].innerText = user_fat + 'g';
+		rows[8].cells[4].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[6].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[7].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[4].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[6].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[7].innerText = Math.round(user_fat/2) + 'g';
 
 		//set zero carb days
-		rows[1].cells[1].innerText = 0 + 'g';
-		rows[1].cells[2].innerText = 0 + 'g';
-		rows[1].cells[3].innerText = 0 + 'g';
-		rows[1].cells[5].innerText = 0 + 'g';
+		rows[2].cells[1].innerText = 0 + 'g';
+		rows[2].cells[2].innerText = 0 + 'g';
+		rows[2].cells[3].innerText = 0 + 'g';
+		rows[2].cells[5].innerText = 0 + 'g';
+		rows[3].cells[1].innerText = 0 + 'g';
+		rows[3].cells[2].innerText = 0 + 'g';
+		rows[3].cells[3].innerText = 0 + 'g';
+		rows[3].cells[5].innerText = 0 + 'g';
 
 		//calculate new fat amount
 		user_fat = Math.round(user_fat + (user_carb * 4)/9);
 
-		rows[3].cells[1].innerText = user_fat + 'g';
-		rows[3].cells[2].innerText = user_fat + 'g';
-		rows[3].cells[3].innerText = user_fat + 'g';
-		rows[3].cells[5].innerText = user_fat + 'g';
+		rows[8].cells[1].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[2].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[3].innerText = Math.round(user_fat/2) + 'g';
+		rows[8].cells[5].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[1].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[2].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[3].innerText = Math.round(user_fat/2) + 'g';
+		rows[9].cells[5].innerText = Math.round(user_fat/2) + 'g';
 	}
 
 	document.getElementById("resultsTable").style.display = 'block';
