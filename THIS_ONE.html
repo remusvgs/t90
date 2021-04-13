@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="css/all_style.css" rel="stylesheet">
+	<script src="js/modernizr.js"></script>
+</head>
+
+<body>
+
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+
+	<header>
+	</header>
+	<!-- /Header -->
+
+	<main>
+		<div class="container">
+			<div id="wizard_container">
+				<form name="example-1" id="wrapped">
+					<input id="website" name="website" type="text" value="">
+					<!-- Leave for security protection, read docs for details -->
+					<div id="middle-wizard">
+						<div class="step">
+							<div class="question_title">
+								<h3>Are You Male Or Female?</h3>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_1" type="checkbox" name="answers_1[]" value="Male" class="required forward" onclick="showMaleGoals();">
+										<label for="answer_1"><img src="images/male.svg" alt="" width="150px"><strong>Male</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_2" name="answers_1[]" type="checkbox" value="Female" class="required forward" onclick="showFemaleGoals();">
+										<label for="answer_2"><img src="images/female.svg" alt="" width="150px"><strong>Female</strong></label>
+									</div>
+								</div>
+							</div>
+							<!-- /row-->
+						</div>
+						<!-- /step-->
+
+						<!-- Age ============================== -->
+						<div class="step">
+							<div class="question_title">
+								<h3>What Is Your Age?</h3>
+								<p>Multiple Selection (Select based)</p>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-5">
+									<div class="box_general">
+										<div class="form-group select">
+											<img src="images/age.svg" alt="" width="100px" style="display: block; margin: 0 auto 15px;">
+											<div class="styled-select">
+												<select class="required" name="select_1" id="age_yrs">
+													<option value="" selected>Select</option>
+													<option value="15">15yrs</option>
+													<option value="16">16yrs</option>
+													<option value="17">17yrs</option>
+													<option value="18">18yrs</option>
+													<option value="19">19yrs</option>
+													<option value="20">20yrs</option>
+													<option value="21">21yrs</option>
+													<option value="22">22yrs</option>
+													<option value="23">23yrs</option>
+													<option value="24">24yrs</option>
+													<option value="25">25yrs</option>
+													<option value="26">26yrs</option>
+													<option value="27">27yrs</option>
+													<option value="28">28yrs</option>
+													<option value="29">29yrs</option>
+													<option value="30">30yrs</option>
+													<option value="31">31yrs</option>
+													<option value="32">32yrs</option>
+													<option value="33">33yrs</option>
+													<option value="34">34yrs</option>
+													<option value="35">35yrs</option>
+													<option value="36">36yrs</option>
+													<option value="37">37yrs</option>
+													<option value="38">38yrs</option>
+													<option value="39">39yrs</option>
+													<option value="40">40yrs</option>
+													<option value="41">41yrs</option>
+													<option value="42">42yrs</option>
+													<option value="43">43yrs</option>
+													<option value="44">44yrs</option>
+													<option value="45">45yrs</option>
+													<option value="46">46yrs</option>
+													<option value="47">47yrs</option>
+													<option value="48">48yrs</option>
+													<option value="49">49yrs</option>
+													<option value="50">50yrs</option>
+													<option value="51">51yrs</option>
+													<option value="52">52yrs</option>
+													<option value="53">53yrs</option>
+													<option value="54">54yrs</option>
+													<option value="55">55yrs</option>
+													<option value="56">56yrs</option>
+													<option value="57">57yrs</option>
+													<option value="58">58yrs</option>
+													<option value="59">59yrs</option>
+													<option value="60">60yrs</option>
+													<option value="61">61yrs</option>
+													<option value="62">62yrs</option>
+													<option value="63">63yrs</option>
+													<option value="64">64yrs</option>
+													<option value="65">65yrs</option>
+													<option value="66">66yrs</option>
+													<option value="67">67yrs</option>
+													<option value="68">68yrs</option>
+													<option value="69">69yrs</option>
+													<option value="70">70yrs</option>
+													<option value="71">71yrs</option>
+													<option value="72">72yrs</option>
+													<option value="73">73yrs</option>
+													<option value="74">74yrs</option>
+													<option value="75">75yrs</option>
+													<option value="76">76yrs</option>
+													<option value="77">77yrs</option>
+													<option value="78">78yrs</option>
+													<option value="79">79yrs</option>
+													<option value="80">80yrs</option>
+													<option value="81">81yrs</option>
+													<option value="82">82yrs</option>
+													<option value="83">83yrs</option>
+													<option value="84">84yrs</option>
+													<option value="85">85yrs</option>
+													<option value="86">86yrs</option>
+													<option value="87">87yrs</option>
+													<option value="88">88yrs</option>
+													<option value="89">89yrs</option>
+													<option value="90">90yrs</option>
+												</select>
+											</div>
+										</div>
+										<!-- /select-->
+									</div>
+									<!-- /box_general -->
+								</div>
+							</div>
+							<!-- /row -->
+						</div>
+						<!-- /step-->
+						<!-- /Age ============================== -->
+
+						<!-- Height ============================== -->
+						<div class="step">
+							<div class="question_title">
+								<h3>What Is Your Height?</h3>
+								<p>Multiple Selection (Select based)</p>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-5">
+									<div class="box_general">
+										<div class="form-group select">
+											<img src="images/height.svg" alt="" width="100px" style="display: block; margin: 0 auto 15px;">
+											<div class="styled-select">
+												<select class="required" name="select_1" id="height_cm">
+													<option value="" selected>Select</option>
+													<option value="127">4'2" - 127cm</option>
+													<option value="130">4'3" - 130cm</option>
+													<option value="132">4'4" - 132cm</option>
+													<option value="135">4'5" - 135cm</option>
+													<option value="137">4'6" - 137cm</option>
+													<option value="140">4'7" - 140cm</option>
+													<option value="142">4'8" - 142cm</option>
+													<option value="145">4'9" - 145cm</option>
+													<option value="147">4'10" - 147cm</option>
+													<option value="150">4'11" - 150cm</option>
+													<option value="152">5'0" - 152cm</option>
+													<option value="155">5'1" - 155cm</option>
+													<option value="157">5'2" - 157cm</option>
+													<option value="160">5'3" - 160cm</option>
+													<option value="163">5'4" - 163cm</option>
+													<option value="165">5'5" - 165cm</option>
+													<option value="168">5'6" - 168cm</option>
+													<option value="170">5'7" - 170cm</option>
+													<option value="173">5'8" - 173cm</option>
+													<option value="175">5'9" - 175cm</option>
+													<option value="178">5'10" - 178cm</option>
+													<option value="180">5'11" - 180cm</option>
+													<option value="183">6'0" - 183cm</option>
+													<option value="185">6'1" - 185cm</option>
+													<option value="188">6'2" - 188cm</option>
+													<option value="191">6'3" - 191cm</option>
+													<option value="193">6'4" - 193cm</option>
+													<option value="196">6'5" - 196cm</option>
+													<option value="198">6'6" - 198cm</option>
+													<option value="201">6'7" - 201cm</option>
+													<option value="203">6'8" - 203cm</option>
+													<option value="206">6'9" - 206cm</option>
+													<option value="208">6'10" - 208cm</option>
+													<option value="211">6'11" - 211cm</option>
+													<option value="213">7'0" - 213cm</option>
+													<option value="216">7'1" - 216cm</option>
+													<option value="218">7'2" - 218cm</option>
+												</select>
+											</div>
+										</div>
+										<!-- /select-->
+									</div>
+									<!-- /box_general -->
+								</div>
+							</div>
+							<!-- /row -->
+						</div>
+						<!-- /step-->
+						<!-- /Height ============================== -->
+
+						<!-- Weight ============================== -->
+						<div class="step">
+							<div class="question_title">
+								<h3>What Is Your Weight?</h3>
+								<p>Multiple Selection (Select based)</p>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-5">
+									<div class="box_general">
+										<div class="form-group select">
+											<img src="images/weight.svg" alt="" width="100px" style="display: block; margin: 0 auto 15px;">
+											<div class="styled-select">
+												<select class="required" name="select_1" id="weight_kg">
+													<option value="" selected>Select</option>
+													<option value="35">77lb - 35kg</option>
+													<option value="36">79lb - 36kg</option>
+													<option value="37">82lb - 37kg</option>
+													<option value="38">84lb - 38kg</option>
+													<option value="39">86lb - 39kg</option>
+													<option value="40">88lb - 40kg</option>
+													<option value="41">90lb - 41kg</option>
+													<option value="42">93lb - 42kg</option>
+													<option value="43">95lb - 43kg</option>
+													<option value="44">97lb - 44kg</option>
+													<option value="45">99lb - 45kg</option>
+													<option value="46">101lb - 46kg</option>
+													<option value="47">104lb - 47kg</option>
+													<option value="48">106lb - 48kg</option>
+													<option value="49">108lb - 49kg</option>
+													<option value="50">110lb - 50kg</option>
+													<option value="51">112lb - 51kg</option>
+													<option value="52">115lb - 52kg</option>
+													<option value="53">117lb - 53kg</option>
+													<option value="54">119lb - 54kg</option>
+													<option value="55">121lb - 55kg</option>
+													<option value="56">123lb - 56kg</option>
+													<option value="57">126lb - 57kg</option>
+													<option value="58">128lb - 58kg</option>
+													<option value="59">130lb - 59kg</option>
+													<option value="60">132lb - 60kg</option>
+													<option value="61">134lb - 61kg</option>
+													<option value="62">137lb - 62kg</option>
+													<option value="63">139lb - 63kg</option>
+													<option value="64">141lb - 64kg</option>
+													<option value="65">143lb - 65kg</option>
+													<option value="66">146lb - 66kg</option>
+													<option value="67">148lb - 67kg</option>
+													<option value="68">150lb - 68kg</option>
+													<option value="69">152lb - 69kg</option>
+													<option value="70">154lb - 70kg</option>
+													<option value="71">157lb - 71kg</option>
+													<option value="72">159lb - 72kg</option>
+													<option value="73">161lb - 73kg</option>
+													<option value="74">163lb - 74kg</option>
+													<option value="75">165lb - 75kg</option>
+													<option value="76">168lb - 76kg</option>
+													<option value="77">170lb - 77kg</option>
+													<option value="78">172lb - 78kg</option>
+													<option value="79">174lb - 79kg</option>
+													<option value="80">176lb - 80kg</option>
+													<option value="81">179lb - 81kg</option>
+													<option value="82">181lb - 82kg</option>
+													<option value="83">183lb - 83kg</option>
+													<option value="84">185lb - 84kg</option>
+													<option value="85">187lb - 85kg</option>
+													<option value="86">190lb - 86kg</option>
+													<option value="87">192lb - 87kg</option>
+													<option value="88">194lb - 88kg</option>
+													<option value="89">196lb - 89kg</option>
+													<option value="90">198lb - 90kg</option>
+													<option value="91">201lb - 91kg</option>
+													<option value="92">203lb - 92kg</option>
+													<option value="93">205lb - 93kg</option>
+													<option value="94">207lb - 94kg</option>
+													<option value="95">209lb - 95kg</option>
+													<option value="96">212lb - 96kg</option>
+													<option value="97">214lb - 97kg</option>
+													<option value="98">216lb - 98kg</option>
+													<option value="99">218lb - 99kg</option>
+													<option value="100">220lb - 100kg</option>
+													<option value="101">223lb - 101kg</option>
+													<option value="102">225lb - 102kg</option>
+													<option value="103">227lb - 103kg</option>
+													<option value="104">229lb - 104kg</option>
+													<option value="105">231lb - 105kg</option>
+													<option value="106">234lb - 106kg</option>
+													<option value="107">236lb - 107kg</option>
+													<option value="108">238lb - 108kg</option>
+													<option value="109">240lb - 109kg</option>
+													<option value="110">243lb - 110kg</option>
+													<option value="111">245lb - 111kg</option>
+													<option value="112">247lb - 112kg</option>
+													<option value="113">249lb - 113kg</option>
+													<option value="114">251lb - 114kg</option>
+													<option value="115">254lb - 115kg</option>
+													<option value="116">256lb - 116kg</option>
+													<option value="117">258lb - 117kg</option>
+													<option value="118">260lb - 118kg</option>
+													<option value="119">262lb - 119kg</option>
+													<option value="120">265lb - 120kg</option>
+													<option value="121">267lb - 121kg</option>
+													<option value="122">269lb - 122kg</option>
+													<option value="123">271lb - 123kg</option>
+													<option value="124">273lb - 124kg</option>
+													<option value="125">276lb - 125kg</option>
+													<option value="126">278lb - 126kg</option>
+													<option value="127">280lb - 127kg</option>
+													<option value="128">282lb - 128kg</option>
+													<option value="129">284lb - 129kg</option>
+													<option value="130">287lb - 130kg</option>
+													<option value="131">289lb - 131kg</option>
+													<option value="132">291lb - 132kg</option>
+													<option value="133">293lb - 133kg</option>
+													<option value="134">295lb - 134kg</option>
+													<option value="135">298lb - 135kg</option>
+													<option value="136">300lb - 136kg</option>
+													<option value="137">302lb - 137kg</option>
+													<option value="138">304lb - 138kg</option>
+													<option value="139">306lb - 139kg</option>
+													<option value="140">309lb - 140kg</option>
+													<option value="141">311lb - 141kg</option>
+													<option value="142">313lb - 142kg</option>
+													<option value="143">315lb - 143kg</option>
+													<option value="144">317lb - 144kg</option>
+													<option value="145">320lb - 145kg</option>
+													<option value="146">322lb - 146kg</option>
+													<option value="147">324lb - 147kg</option>
+													<option value="148">326lb - 148kg</option>
+													<option value="149">328lb - 149kg</option>
+													<option value="150">331lb - 150kg</option>
+												</select>
+											</div>
+										</div>
+										<!-- /select-->
+									</div>
+									<!-- /box_general -->
+								</div>
+							</div>
+							<!-- /row -->
+						</div>
+						<!-- /step-->
+						<!-- /Weight ============================== -->
+
+						<div class="step">
+							<div class="question_title">
+								<h3>What Is Your Activity Level?</h3>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_1_group_2" type="radio" name="answer_group_1" value="1.2" class="required forward" onclick="setActivityLevel(this);">
+										<label for="answer_1_group_2"><img src="images/SEDENTARY.svg" alt="" width="100px"><strong>SEDENTARY</strong>Little or zero exercise/desk job</label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_2_group_2" name="answer_group_1" type="radio" value="1.375" class="required forward" onclick="setActivityLevel(this);">
+										<label for="answer_2_group_2"><img src="images/LIGHTLY_ACTIVE.svg" alt="" width="100px"><strong>LIGHTLY ACTIVE</strong>Light exercise/sports-3-5 days per week</label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_3_group_2" name="answer_group_1" type="radio" value="1.55" class="required forward" onclick="setActivityLevel(this);">
+										<label for="answer_3_group_2"><img src="images/MODERATELY_ACTIVE.svg" alt="" width="100px"><strong>MODERATELY ACTIVE</strong>Moderately exercise/sport 3-5 days per week</label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_4_group_2" name="answer_group_1" type="radio" value="1.725" class="required forward" onclick="setActivityLevel(this);">
+										<label for="answer_4_group_2"><img src="images/VERY_ACTIVE.svg" alt="" width="100px"><strong>VERY ACTIVE</strong>Hard exercise/sport 6-7 days per week</label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_5_group_2" name="answer_group_1" type="radio" value="1.9" class="required forward" onclick="setActivityLevel(this);">
+										<label for="answer_5_group_2"><img src="images/EXTREMELY_ACTIVE.svg" alt="" width="100px"><strong>EXTREMELY ACTIVE</strong>Hard daily exercise.2 training sessions/day. or very active job (eg:construction worker)</label>
+									</div>
+								</div>
+							</div>
+							<!-- /row-->
+						</div>
+						<!-- /step -->
+
+						<div class="step">
+							<div class="question_title">
+								<h3>What Is Your Body Type?</h3>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_1_group_22" type="radio" name="answer_group_1" value="endomorph" class="required forward" onclick="setBodyType(this);">
+										<label for="answer_1_group_22"><img src="images/ENDOMORPH.svg" alt="" width="150px"><strong>ENDOMORPH</strong>Round and fatter-gain fat quick and lose fat slowly</label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_2_group_23" name="answer_group_1" type="radio" value="ectomorph" class="required forward" onclick="setBodyType(this);">
+										<label for="answer_2_group_23"><img src="images/ECTOMORPH.svg" alt="" width="150px"><strong>ECTOMORPH</strong>Lean and skinny-lose weight easily -find it difficult to gain muscle</label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="answer_3_group_24" name="answer_group_1" type="radio" value="mesomorph" class="required forward" onclick="setBodyType(this);">
+										<label for="answer_3_group_24"><img src="images/MESOMORPH.svg" alt="" width="150px"><strong>MESOMORPH</strong>Muscular and lean-lose fat easily and build muscle easily</label>
+									</div>
+								</div>
+							</div>
+							<!-- /row-->
+						</div>
+						<!-- /step -->
+
+						<div class="submit step">
+							<div class="question_title">
+								<h3>What Is Your Goal And Desire?</h3>
+								<p>Multiple Selection (Select based)</p>
+							</div>
+							<!-- MALE GOALS -->
+							<div class="row justify-content-center" id="male_goal" style="display: none">
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="male_goal_1" type="radio" name="answer_group_1" value="-500" class="required" onclick="setUserGoal(this);">
+										<label for="male_goal_1"><img src="images/goal1.svg" alt="" width="100px"><strong>I WANT TO GET LEAN & BURN FAT FAST</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="male_goal_2" name="answer_group_1" type="radio" value="-750" class="required" onclick="setUserGoal(this);">
+										<label for="male_goal_2"><img src="images/super_lean.svg" alt="" width="100px"><strong>I WANT TO GET SUPER LEAN & SHREDDED</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="male_goal_3" name="answer_group_1" type="radio" value="+500" class="required" disabled>
+										<label for="male_goal_3"><img src="images/coming_soon.svg" alt="" width="100px"><strong>I WANT TO BUILD LEAN MUSCLE MASS</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="male_goal_4" name="answer_group_1" type="radio" value="professional_plan" class="required" disabled>
+										<label for="male_goal_4"><img src="images/coming_soon.svg" alt="" width="100px"><strong>I WANT A PROFESSIONAL NUTRITION PLAN</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="male_goal_5" name="answer_group_1" type="radio" value="-500" class="required" onclick="setUserGoal(this);">
+										<label for="male_goal_5"><img src="images/train_home.svg" alt="" width="100px"><strong>I WANT TO TRAIN AT HOME AND GET LEAN AND BURN FAT FAST</strong></label>
+									</div>
+								</div>
+							</div>
+							<!-- /MALE GOALS -->
+							<!-- FEMALE GOALS -->
+							<div class="row justify-content-center" id="female_goal" style="display: none">
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="female_goal_1" type="radio" name="answer_group_1" value="-500" class="required" onclick="setUserGoal(this);">
+										<label for="female_goal_1"><img src="images/goal1.svg" alt="" width="100px"><strong>I WANT TO GET TONED AND BURN FAT FAST</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="female_goal_2" name="answer_group_1" type="radio" value="-750" class="required" onclick="setUserGoal(this);">
+										<label for="female_goal_2"><img src="images/bikini.svg" alt="" width="100px"><strong>I WANT A BIKINI BODY</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="female_goal_3" name="answer_group_1" type="radio" value="+500" class="required" disabled>
+										<label for="female_goal_3"><img src="images/coming_soon.svg" alt="" width="100px"><strong>I WANT TO SCULPT MY BODY</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="female_goal_4" name="answer_group_1" type="radio" value="professional_plan" class="required" disabled>
+										<label for="female_goal_4"><img src="images/coming_soon.svg" alt="" width="100px"><strong>I WANT A PROFESSIONAL NUTRITION PLAN</strong></label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="item">
+										<input id="female_goal_5" name="answer_group_1" type="radio" value="-500" class="required" onclick="setUserGoal(this);">
+										<label for="female_goal_5"><img src="images/train_home.svg" alt="" width="100px"><strong>I WANT TO TRAIN AT HOME AND GET TONED AND BURN FAT FAST</strong></label>
+									</div>
+								</div>
+							</div>
+							<!-- /FEMALE GOALS -->
+
+							<!-- /row -->
+						</div>
+						<!-- /step-->
+
+					</div>
+					<!-- /middle-wizard -->
+					<div id="bottom-wizard">
+						<button type="button" name="backward" class="backward" onclick="hideResultsTable();">Backward </button>
+						<button type="button" name="forward" class="forward">Forward</button>
+						<button type="button" name="process" class="submit" onclick="calculateAndRedirect();">Submit</button>
+					</div>
+					<!-- /bottom-wizard -->
+				</form>
+
+				<div class="table-responsive" id="resultsTable" style="display: none;">
+				   <table class="table table-dark">
+					   <catpion> Scroll Left-Right To See All Your Results </caption>
+				      <thead>
+				         <tr>
+				            <th scope="col">MACROS</th>
+				            <th scope="col">Monday</th>
+				            <th scope="col">Tuesday</th>
+				            <th scope="col">Wednesday</th>
+				            <th scope="col">Thursday</th>
+				            <th scope="col">Friday</th>
+				            <th scope="col">Saturday</th>
+				            <th scope="col">Sunday</th>
+				         </tr>
+				      </thead>
+				      <tbody>
+				         <tr>
+				            <th scope="row">CARBS</th>
+							<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+				         </tr>
+						 <tr>
+				            <th scope="row">Meal 1: 13:00hrs</th>
+							<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+				         </tr>
+						 <tr>
+						   <th scope="row">Meal 2: 18:00hrs</th>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						</tr>
+				         <tr>
+				            <th scope="row">PROTEIN</th>
+							<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+				         </tr>
+						 <tr>
+				            <th scope="row">Meal 1: 13:00hrs</th>
+							<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+				         </tr>
+						 <tr>
+						   <th scope="row">Meal 2: 18:00hrs</th>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						</tr>
+				         <tr>
+				            <th scope="row">FAT</th>
+							<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+				         </tr>
+						 <tr>
+				            <th scope="row">Meal 1: 13:00hrs</th>
+							<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+ 						   	<td></td>
+				         </tr>
+						 <tr>
+						   <th scope="row">Meal 2: 18:00hrs</th>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						   <td></td>
+						</tr>
+				      </tbody>
+				   </table>
+				</div>
+
+			</div>
+			<!-- /Wizard container -->
+		</div>
+		<!-- /Container -->
+	</main>
+	<!-- /main -->
+
+	<footer>
+
+	</footer>
+	<!-- /footer -->
+
+	<!-- COMMON SCRIPTS -->
+    <script src="js/all_scripts.js"></script>
+
+</body>
+</html>
