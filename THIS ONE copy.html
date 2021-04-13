@@ -55,103 +55,18 @@
 						<div class="step">
 							<div class="question_title">
 								<h3>What Is Your Age?</h3>
-								<p>Multiple Selection (Select based)</p>
 							</div>
 							<div class="row justify-content-center">
 								<div class="col-lg-5">
 									<div class="box_general">
-										<div class="form-group select">
-											<img src="images/age.svg" alt="" width="100px" style="display: block; margin: 0 auto 15px;">
-											<div class="styled-select">
-												<select class="required" name="select_1" id="age_yrs">
-													<option value="" selected>Select</option>
-													<option value="15">15yrs</option>
-													<option value="16">16yrs</option>
-													<option value="17">17yrs</option>
-													<option value="18">18yrs</option>
-													<option value="19">19yrs</option>
-													<option value="20">20yrs</option>
-													<option value="21">21yrs</option>
-													<option value="22">22yrs</option>
-													<option value="23">23yrs</option>
-													<option value="24">24yrs</option>
-													<option value="25">25yrs</option>
-													<option value="26">26yrs</option>
-													<option value="27">27yrs</option>
-													<option value="28">28yrs</option>
-													<option value="29">29yrs</option>
-													<option value="30">30yrs</option>
-													<option value="31">31yrs</option>
-													<option value="32">32yrs</option>
-													<option value="33">33yrs</option>
-													<option value="34">34yrs</option>
-													<option value="35">35yrs</option>
-													<option value="36">36yrs</option>
-													<option value="37">37yrs</option>
-													<option value="38">38yrs</option>
-													<option value="39">39yrs</option>
-													<option value="40">40yrs</option>
-													<option value="41">41yrs</option>
-													<option value="42">42yrs</option>
-													<option value="43">43yrs</option>
-													<option value="44">44yrs</option>
-													<option value="45">45yrs</option>
-													<option value="46">46yrs</option>
-													<option value="47">47yrs</option>
-													<option value="48">48yrs</option>
-													<option value="49">49yrs</option>
-													<option value="50">50yrs</option>
-													<option value="51">51yrs</option>
-													<option value="52">52yrs</option>
-													<option value="53">53yrs</option>
-													<option value="54">54yrs</option>
-													<option value="55">55yrs</option>
-													<option value="56">56yrs</option>
-													<option value="57">57yrs</option>
-													<option value="58">58yrs</option>
-													<option value="59">59yrs</option>
-													<option value="60">60yrs</option>
-													<option value="61">61yrs</option>
-													<option value="62">62yrs</option>
-													<option value="63">63yrs</option>
-													<option value="64">64yrs</option>
-													<option value="65">65yrs</option>
-													<option value="66">66yrs</option>
-													<option value="67">67yrs</option>
-													<option value="68">68yrs</option>
-													<option value="69">69yrs</option>
-													<option value="70">70yrs</option>
-													<option value="71">71yrs</option>
-													<option value="72">72yrs</option>
-													<option value="73">73yrs</option>
-													<option value="74">74yrs</option>
-													<option value="75">75yrs</option>
-													<option value="76">76yrs</option>
-													<option value="77">77yrs</option>
-													<option value="78">78yrs</option>
-													<option value="79">79yrs</option>
-													<option value="80">80yrs</option>
-													<option value="81">81yrs</option>
-													<option value="82">82yrs</option>
-													<option value="83">83yrs</option>
-													<option value="84">84yrs</option>
-													<option value="85">85yrs</option>
-													<option value="86">86yrs</option>
-													<option value="87">87yrs</option>
-													<option value="88">88yrs</option>
-													<option value="89">89yrs</option>
-													<option value="90">90yrs</option>
-												</select>
-											</div>
+										<div class="rounded_slider">
+											<div id="age_slider" style="margin: 0 auto 20px;"></div>
 										</div>
-										<!-- /select-->
 									</div>
-									<!-- /box_general -->
 								</div>
 							</div>
 							<!-- /row -->
 						</div>
-						<!-- /step-->
 						<!-- /Age ============================== -->
 
 						<!-- Height ============================== -->
@@ -164,7 +79,7 @@
 								<div class="col-lg-5">
 									<div class="box_general">
 										<div class="form-group select">
-											<img src="images/height.svg" alt="" width="100px" style="display: block; margin: 0 auto 15px;">
+											<img src="images/Height.svg" alt="" width="100px" style="display: block; margin: 0 auto 15px;">
 											<div class="styled-select">
 												<select class="required" name="select_1" id="height_cm">
 													<option value="" selected>Select</option>
@@ -510,63 +425,158 @@
 					</div>
 					<!-- /middle-wizard -->
 					<div id="bottom-wizard">
-						<button type="button" name="backward" class="backward" onclick="hideResultsTable();">Backward </button>
+						<button type="button" name="backward" class="backward">Backward </button>
 						<button type="button" name="forward" class="forward">Forward</button>
 						<button type="button" name="process" class="submit" onclick="calculateAndRedirect();">Submit</button>
 					</div>
 					<!-- /bottom-wizard -->
 				</form>
 
-				<div class="table-responsive" id="resultsTable" style="display: none;">
-				   <table class="table table-dark">
-					   <catpion> Scroll Left-Right To See All Your Results </caption>
-				      <thead>
-				         <tr>
-				            <th scope="col">MACROS</th>
-				            <th scope="col">Monday</th>
-				            <th scope="col">Tuesday</th>
-				            <th scope="col">Wednesday</th>
-				            <th scope="col">Thursday</th>
-				            <th scope="col">Friday</th>
-				            <th scope="col">Saturday</th>
-				            <th scope="col">Sunday</th>
-				         </tr>
-				      </thead>
-				      <tbody>
-				         <tr>
-				            <th scope="row">CARBS</th>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				         </tr>
-				         <tr>
-				            <th scope="row">PROT</th>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				         </tr>
-				         <tr>
-				            <th scope="row">FAT</th>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				            <td></td>
-				         </tr>
-				      </tbody>
-				   </table>
-				</div>
+<div class="table-responsive">
+				<table class="table">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+	  <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+	  <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+	  <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+	  <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
+				<div class="table-responsive" id="resultsTable">
+					<table class="table">
+					  <thead>
+						<tr>
+							<th class="divTableCell col"><strong>MACROS</strong></div>
+	  						<th class="divTableCell col"><strong>Monday</strong></div>
+	  						<th class="divTableCell col"><strong>Tuesday</strong></div>
+	  						<th class="divTableCell col"><strong>Wednesday</strong></div>
+	  						<th class="divTableCell col"><strong>Thursday</strong></div>
+	  						<th class="divTableCell col"><strong>Friday</strong></div>
+	  						<th class="divTableCell col"><strong>Saturday</strong></div>
+	  						<th class="divTableCell col"><strong>Sunday</strong></div>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr class="divTableRow">
+						  <th scope="row">CARBS</th>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						  <td class="divTableCell"></td>
+						</tr>
+						<tr class="divTableRow">
+						  <th scope="row">PROT</th>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+						</tr>
+						<tr class="divTableRow">
+						  <th scope="row">FAT</th>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+  						  <td class="divTableCell"></td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+<!--
+				<div id="resultsTable" class="container" style="border: solid 1px black; width: 100%; height: 100%; display: nsone">
+					<div class="divTableRow row">
+						<div class="divTableCell col"><strong>MACROS</strong></div>
+						<div class="divTableCell col"><strong>Monday</strong></div>
+						<div class="divTableCell col"><strong>Tuesday</strong></div>
+						<div class="divTableCell col"><strong>Wednesday</strong></div>
+						<div class="divTableCell col"><strong>Thursday</strong></div>
+						<div class="divTableCell col"><strong>Friday</strong></div>
+						<div class="divTableCell col"><strong>Saturday</strong></div>
+						<div class="divTableCell col"><strong>Sunday</strong></div>
+					</div>
+					<div class="divTableRow row">
+						<div class="divTableCell col"><strong>CARBS</strong></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+					</div>
+					<div class="divTableRow row">
+						<div class="divTableCell col"><strong>PROTEIN</strong></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+					</div>
+					<div class="divTableRow row">
+						<div class="divTableCell col"><strong>FATS</strong></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+						<div class="divTableCell col"></div>
+					</div>
+				</div>
+-->
 			</div>
 			<!-- /Wizard container -->
 		</div>
